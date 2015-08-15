@@ -10,6 +10,12 @@ $standard-fonts: Arial, Helvetica, sans-serif;
 body {
   background-color: $meet-team-bg;
   font-family: $standard-fonts;
+
+  // Remove ugly Blue outline from tabbable elements (508)
+  :focus {
+    outline: 0;
+  }
+
 }
 
 #menu {
@@ -126,6 +132,7 @@ body {
         color: $charcoal-text;
         font-size: 20px;
         margin-top: 2px;
+        height: 56px !important;
       }
     }
   }
