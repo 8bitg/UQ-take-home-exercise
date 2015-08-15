@@ -1,0 +1,174 @@
+$menu-border: #DBDBDB;
+$meet-team-bg: #F1F1F1;
+$starting-point-light-green: #70AE47;
+$starting-point-green: #649D3E;
+$charcoal-text: #6A6A6A;
+$charcoal-link: #4A4A4A;
+$team-bg: #E7EBE5;
+$standard-fonts: Arial, Helvetica, sans-serif;
+
+body {
+  background-color: $meet-team-bg;
+  font-family: $standard-fonts;
+}
+
+#menu {
+  background-color: white;
+  border-bottom: 1px solid $menu-border;
+  height: 89px;
+
+  #starting-point-logo {
+    margin-top: 1.15em;
+    height: 3.72em;
+    min-height: 3.72em;
+    float: left;
+  }
+
+  ul {
+    font-size: 17px;
+    margin-top: 1.75em !important;
+    font-family: sans-serif;
+    margin-left: 5em;
+    li {
+      &.center-item {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: $charcoal-link;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+          color: $starting-point-green;
+        }
+      }
+    }
+  }
+
+  #user-actions {
+    a {
+      margin-top: 1.25em;
+      color: $starting-point-light-green;
+      font-size: 20px;
+      text-decoration: none;
+      &:hover {
+        color: $starting-point-green;
+      }
+    }
+    button {
+      margin-top: 1em;
+      background-color: $starting-point-light-green;
+      border-color: $starting-point-green;
+      color: white;
+      font-size: 20px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      &:hover {
+        background-color: $starting-point-green;
+      }
+    }
+  }
+}
+
+#main {
+  margin-top: 103px;
+
+  #meet-the-team {
+    margin-bottom: 5em;
+    .headline {
+      font-size: 36px;
+      color: $starting-point-green;
+      font-weight: 100;
+    }
+    .content {
+      color: $charcoal-text;
+      font-size: 18px;
+      margin-top: 2em;
+    }
+  }
+
+  #team {
+    background-color: $team-bg;
+    box-shadow: 1px 1px 5px $charcoal-text;
+    margin-bottom: 5px;
+    .container {
+      padding-top: 5em;
+      .row:first-child {
+        margin-bottom: 7em;
+      }
+      .row:last-child {
+        margin-bottom: 5em;
+      }
+    }
+    .member {
+      .clearfix {
+        .image-responsive {
+          padding-bottom: 1.5em;
+        }
+      }
+
+      .content {
+        color: $charcoal-text;
+        font-size: 20px;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  #footer {
+    background-color: #24224F;
+    padding-top: 6em;
+    padding-bottom: 8em;
+    .headline-1 {
+      font-size: 36px;
+      color: $starting-point-green;
+      font-weight: 100;
+    }
+    .headline-2 {
+      font-size: 36px;
+      color: white;
+      font-weight: 100;
+    }
+    .content {
+      color: white;
+      font-size: 18px;
+      margin-top: 3em;
+    }
+    .alt-content {
+      color: $starting-point-green;
+    }
+  }
+}
+
+#footer-menu {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  a {
+    text-decoration: none;
+    color: $charcoal-link;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #footer-navigation li:before {
+    content: " | ";
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  #footer-navigation li:first-child:before {
+    content: none;
+  }
+
+  #footer-navigation {
+    margin: 0;
+    padding: 0;
+    #contact-us a {
+      color: $starting-point-light-green;
+    }
+  }
+  .twitter {
+    fill: $starting-point-green;
+  }
+}

@@ -1,0 +1,116 @@
+body {
+  background-color: #F1F1F1;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#menu {
+  background-color: white;
+  border-bottom: 1px solid #DBDBDB;
+  height: 89px; }
+  #menu #starting-point-logo {
+    margin-top: 1.15em;
+    height: 3.72em;
+    min-height: 3.72em;
+    float: left; }
+  #menu ul {
+    font-size: 17px;
+    margin-top: 1.75em !important;
+    font-family: sans-serif;
+    margin-left: 5em; }
+    #menu ul li.center-item {
+      padding-left: 25px;
+      padding-right: 25px; }
+    #menu ul li a {
+      text-decoration: none;
+      color: #4A4A4A;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif; }
+      #menu ul li a:hover {
+        color: #649D3E; }
+  #menu #user-actions a {
+    margin-top: 1.25em;
+    color: #70AE47;
+    font-size: 20px;
+    text-decoration: none; }
+    #menu #user-actions a:hover {
+      color: #649D3E; }
+  #menu #user-actions button {
+    margin-top: 1em;
+    background-color: #70AE47;
+    border-color: #649D3E;
+    color: white;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+    #menu #user-actions button:hover {
+      background-color: #649D3E; }
+
+#main {
+  margin-top: 103px; }
+  #main #meet-the-team {
+    margin-bottom: 5em; }
+    #main #meet-the-team .headline {
+      font-size: 36px;
+      color: #649D3E;
+      font-weight: 100; }
+    #main #meet-the-team .content {
+      color: #6A6A6A;
+      font-size: 18px;
+      margin-top: 2em; }
+  #main #team {
+    background-color: #E7EBE5;
+    box-shadow: 1px 1px 5px #6A6A6A;
+    margin-bottom: 5px; }
+    #main #team .container {
+      padding-top: 5em; }
+      #main #team .container .row:first-child {
+        margin-bottom: 7em; }
+      #main #team .container .row:last-child {
+        margin-bottom: 5em; }
+    #main #team .member .clearfix .image-responsive {
+      padding-bottom: 1.5em; }
+    #main #team .member .content {
+      color: #6A6A6A;
+      font-size: 20px;
+      margin-top: 2px; }
+  #main #footer {
+    background-color: #24224F;
+    padding-top: 6em;
+    padding-bottom: 8em; }
+    #main #footer .headline-1 {
+      font-size: 36px;
+      color: #649D3E;
+      font-weight: 100; }
+    #main #footer .headline-2 {
+      font-size: 36px;
+      color: white;
+      font-weight: 100; }
+    #main #footer .content {
+      color: white;
+      font-size: 18px;
+      margin-top: 3em; }
+    #main #footer .alt-content {
+      color: #649D3E; }
+
+#footer-menu {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  #footer-menu a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif; }
+  #footer-menu #footer-navigation li:before {
+    content: " | ";
+    padding-right: 20px;
+    padding-left: 20px; }
+  #footer-menu #footer-navigation li:first-child:before {
+    content: none; }
+  #footer-menu #footer-navigation {
+    margin: 0;
+    padding: 0; }
+    #footer-menu #footer-navigation #contact-us a {
+      color: #70AE47; }
+  #footer-menu .twitter {
+    fill: #649D3E; }
+
+/*# sourceMappingURL=style.css.map */
