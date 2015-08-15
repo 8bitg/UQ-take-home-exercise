@@ -102,9 +102,23 @@ body {
       }
     }
     .member {
-      .clearfix {
-        .image-responsive {
-          padding-bottom: 1.5em;
+      .image-responsive {
+        padding-bottom: 1.5em;
+        display: block;
+        margin: auto;
+        &:hover {
+          + .name {
+            display: none;
+          }
+          ~ .tag-line {
+            display: block;
+          }
+        }
+        + .name {
+          display: block;
+        }
+        ~ .tag-line {
+          display: None;
         }
       }
 

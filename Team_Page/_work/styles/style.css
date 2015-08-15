@@ -66,8 +66,18 @@ body {
         margin-bottom: 7em; }
       #main #team .container .row:last-child {
         margin-bottom: 5em; }
-    #main #team .member .clearfix .image-responsive {
-      padding-bottom: 1.5em; }
+    #main #team .member .image-responsive {
+      padding-bottom: 1.5em;
+      display: block;
+      margin: auto; }
+      #main #team .member .image-responsive:hover + .name {
+        display: none; }
+      #main #team .member .image-responsive:hover ~ .tag-line {
+        display: block; }
+      #main #team .member .image-responsive + .name {
+        display: block; }
+      #main #team .member .image-responsive ~ .tag-line {
+        display: None; }
     #main #team .member .content {
       color: #6A6A6A;
       font-size: 20px;
