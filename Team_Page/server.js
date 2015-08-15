@@ -1,0 +1,1 @@
+require('http').createServer(require('serve-static')('.')).listen(3000);

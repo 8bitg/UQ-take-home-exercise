@@ -185,14 +185,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  #footer-navigation li:before {
-    content: " | ";
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  #footer-navigation li:first-child:before {
-    content: none;
+  #footer-navigation li {
+    border-left: 1px solid black !important;
+    &:first-child {
+      border: 0 !important;
+    }
+    @media screen and (max-width: 991px) {
+      &#contact-us {
+        border: 0 !important;
+        span {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      border: 0 !important;
+    }
   }
 
   #footer-navigation {
