@@ -5,6 +5,7 @@ $starting-point-green: #649D3E;
 $charcoal-text: #6A6A6A;
 $charcoal-link: #4A4A4A;
 $team-bg: #E7EBE5;
+$lorem-section-bg: #24224F;
 $standard-fonts: Arial, Helvetica, sans-serif;
 
 body {
@@ -78,7 +79,7 @@ body {
 }
 
 #main {
-  margin-top: 103px;
+  margin-top: calc(5% + 10px);
 
   #meet-the-team {
     margin-bottom: 5em;
@@ -108,6 +109,18 @@ body {
       }
     }
     .member {
+        @media (min-width: 992px) {
+          + .row-2 {
+            margin-top: 5em !important;
+            margin-bottom: 3em !important;
+          }
+        }
+        @media screen and (max-width: 991px) {
+          margin-bottom: 3em;
+          + .row-3 {
+            margin-bottom: 3em !important;
+          }
+        }
       .image-responsive {
         padding-bottom: 1.5em;
         display: block;
@@ -138,7 +151,7 @@ body {
   }
 
   #footer {
-    background-color: #24224F;
+    background-color: $lorem-section-bg;
     padding-top: 6em;
     padding-bottom: 8em;
     .headline-1 {
@@ -188,8 +201,5 @@ body {
     #contact-us a {
       color: $starting-point-light-green;
     }
-  }
-  .twitter {
-    fill: $starting-point-green;
   }
 }
