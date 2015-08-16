@@ -1,5 +1,5 @@
 # UQ Take-Home Exercise
----
+
 This project is a sample of my work, illustrating my knowledge of Front-End best practices.  
 ####I was tasked with recreating the look and feel of a given design.
 #####Optional tasks included making it Responsive and adding a small animation to the team member avatars.
