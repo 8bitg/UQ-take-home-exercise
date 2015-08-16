@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartingPoints</title>
+
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <nav id="menu" class="navbar">
+        <div class="container">
+            <img class="col-sm-5 col-md-4 col-lg-3" id="starting-point-logo" src="assets/img/logo.png" alt="Starting Point Logo" role="presentation" tabindex="0"/>
+            <div class="hidden-xs hidden-sm col-md-5 col-lg-5" id="nav-buttons-upper" >
+                <ul class="pull-right list-inline">
+                    <li><a href="#">OUR STORY</a></li>
+                    <li class="center-item"><a href="#">BLOG</a></li>
+                    <li><a href="#">PRICING</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-5 col-md-3 col-lg-4 pull-right" id="user-actions">
+                <a id="login-link" href="#" class="text-center">Login</a>
+                <button id="sign-up-btn" class="btn btn-sm">SIGNUP</button>
+            </div>
+        </div>
+        <!-- Decided to keep the nav links visible, even on smaller screens. -->
+        <!-- Wanted to avoid using the Hamburger menu, only because it is over-used and I wanted to see how a second row of links would play out.-->
+        <div class="hidden-md hidden-lg col-xs-12" id="nav-buttons-lower">
+            <ul class="list-inline">
+                <li><a href="#">OUR STORY</a></li>
+                <li class="center-item"><a href="#">BLOG</a></li>
+                <li><a href="#">PRICING</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="main">
+        <section id="meet-the-team">
+            <div class="container text-center">
+                <span tabindex="0" class="headline col-xs-12">Meet The Team</span>
+                <span tabindex="-1" class="content col-xs-10 col-xs-offset-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            </div>
+        </section>
+        <section id="team">
+            <div class="container text-center">
+
+                <!-- Member: Scott Rakestraw - Has Aria Label -->
+                <div tabindex="0" class="member col-md-4 col-sm-6 col-xs-12">
+                    <img class="image-responsive" src="assets/img/animal_1.png" alt="An image of a sheep" tabindex="0"/>
+
+                    <span aria-label="Scott Rakestraw - Don't be sheepish, check us out!" class="name content">Scott Rakestraw</span>
+                    <span class="tag-line content">"Don't be sheepish, check us out!"</span>
+                </div>
+                <!-- Member: Keith Pepling - Has Aria Label -->
+                <div tabindex="0" class="member col-md-4 col-sm-6 col-xs-12">
+                    <img class="image-responsive" src="assets/img/animal_5.png" alt="An image of a cow" tabindex="0"/>
+
+                    <span aria-label="Keith Pepling - You'll be over the MOOn!" class="name content">Keith Pepling</span>
+                    <span class="tag-line content">"You'll be over the MOOn!"</span>
+                </div>
+                <!-- Member: Orion Free - Has Aria Label -->
+                <div tabindex="0" class="member col-md-4 col-sm-6 col-xs-12">
+                    <img class="image-responsive" src="assets/img/animal_8.png" alt="An image of a buck" tabindex="0"/>
+
+                    <span aria-label="Orion Free - Just a few Bucks a month" class="name content">Orion Free</span>
+                    <span class="tag-line content">"Just a few Bucks a month"</span>
+                </div>
+                <!-- Member: Kekeli Houngbeke - Has Aria Label -->
+                <div tabindex="0" class="member row-2 col-md-4 col-sm-6 col-xs-12">
+                    <img class="image-responsive" src="assets/img/animal_3.png" alt="An image of a fox" tabindex="0"/>
+
+                    <span aria-label="Kekeli Houngbeke - I can't wait to get my paws on it!" class="name content">Kekeli Houngbeke</span>
+                    <span class="tag-line content">"I can't wait to get my paws on it!"</span>
+                </div>
+                <!-- Member: Kathryn Pearlman - Has Aria Label -->
+                <div tabindex="0" class="member row-2 col-md-4 col-sm-6 col-xs-12">
+                    <img class="image-responsive" src="assets/img/animal_2.png" alt="An image of a giraffe" tabindex="0"/>
+
+                    <span aria-label="Kathryn Pearlman - We'll stick our necks out for you" class="name content">Kathryn Pearlman</span>
+                    <span class="tag-line content">"We'll stick our necks out for you"</span>
+                </div>
+                <!-- Member: Greg Harrison - Has Aria Label -->
+                <div tabindex="0" class="member row-2 row-3 col-md-4 col-sm-6 col-xs-12">
+                    <img class="image-responsive" src="assets/img/animal_me.png" alt="An image of a penguin" tabindex="0"/>
+
+                    <span aria-label="Greg Harrison - It's the coolest!" class="name content">Greg Harrison</span>
+                    <span class="tag-line content">"It's the coolest!"</span>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container text-center">
+                <span tabindex="0" class="headline-1 col-xs-12">Lorem Ipsum <span class="headline-2">dolor sit amet</span></span>
+                <span tabindex="-1" class="content col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <span class="alt-content">eiusmod tempor incididunt</span> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <span class="alt-content">commodo consequat.</span></span>
+            </div>
+        </section>
+    </div>
+    <footer id="footer-menu">
+        <div class="container">
+            <div class="col-xs-9 col-md-8">
+                <ul id="footer-navigation" class="list-inline">
+                    <li><a href="#">Meet the team</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li id="contact-us">
+                        <span aria-hidden="true">Contact us:</span>
+                        <a aria-label="Contact us at hello@startingpoints.com" href="#">hello@startingpoints.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 text-right col-md-2 pull-right">
+                <a aria-label="Follow us on Twitter" href="#"><img aria-hidden="true" id="twitter" src="assets/img/twitter.svg"/></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
