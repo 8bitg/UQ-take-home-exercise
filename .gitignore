@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-Team_Page/bower_components
-Team_Page/node_modules
+team_page/bower_components
+team_page/node_modules
 *.zip
-Team_Page/dist
+team_page/dist
+.idea
