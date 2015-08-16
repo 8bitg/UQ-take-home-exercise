@@ -190,12 +190,12 @@ body {
     &:first-child {
       border: 0 !important;
     }
+    @media screen and (max-width: 556px) {
+      display: block !important;
+    }
     @media screen and (max-width: 991px) {
       &#contact-us {
         border: 0 !important;
-        span {
-          display: none;
-        }
       }
     }
     @media screen and (max-width: 991px) {
