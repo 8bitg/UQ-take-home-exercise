@@ -1,0 +1,291 @@
+$menu-border: #DBDBDB;
+$meet-team-bg: #F1F1F1;
+$starting-point-light-green: #70AE47;
+$starting-point-green: #649D3E;
+$charcoal-text: #6A6A6A;
+$charcoal-link: #4A4A4A;
+$team-bg: #E7EBE5;
+$lorem-section-bg: #24224F;
+$standard-fonts: Arial, Helvetica, sans-serif;
+
+$max-width-sm: "screen and (max-width: 991px)";
+$max-width-xs: "screen and (max-width: 768px)";
+$max-width-tiny: "screen and (max-width: 556px)";
+$max-width-md: "screen and (max-width: 1199px)";
+
+$min-width-md: "(min-width: 992px)";
+
+body {
+  background-color: $meet-team-bg;
+  font-family: $standard-fonts;
+
+  // Remove ugly Blue outline from tabbable elements (508)
+  :focus {
+    outline: 0;
+  }
+}
+// End Body section
+
+#menu {
+  background-color: white;
+  border-bottom: 1px solid $menu-border;
+  height: 89px;
+
+  #starting-point-logo {
+    @media #{$max-width-xs} {
+      height: 2.5em;
+    }
+    margin-top: 1.15em;
+    max-height: 3.72em;
+    max-width: 255px;
+    float: left;
+  }
+
+  #nav-buttons-lower {
+    text-align: center;
+    margin-top: .25em;
+    font-size: 1.25em;
+    li {
+      &.center-item {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: $charcoal-link;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+          color: $starting-point-green;
+        }
+      }
+    }
+  }
+
+  #nav-buttons-upper {
+    font-size: 17px;
+    margin-top: 1.75em !important;
+    font-family: sans-serif;
+    li {
+      &.center-item {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: $charcoal-link;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+          color: $starting-point-green;
+        }
+      }
+    }
+  }
+
+  #user-actions {
+    #login-link {
+      @media #{$max-width-xs} {
+        font-size: 16px;
+      }
+      width: 50%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-top: 1.25em;
+      color: $starting-point-light-green;
+      font-size: 20px;
+      text-decoration: none;
+      &:hover {
+        color: $starting-point-green;
+      }
+    }
+    #sign-up-btn {
+      @media #{$max-width-xs} {
+        font-size: 16px;
+      }
+      width: 50%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding: 2px 15px;
+      margin-top: 1em;
+      background-color: $starting-point-light-green;
+      border-color: $starting-point-green;
+      color: white;
+      font-size: 20px;
+      &:hover {
+        background-color: $starting-point-green;
+      }
+    }
+  }
+}
+// End #menu section
+
+#main {
+  margin-top: calc(5% + 10px);
+
+  #meet-the-team {
+    margin-bottom: 5em;
+    .headline {
+      font-size: 36px;
+      color: $starting-point-green;
+      font-weight: 100;
+    }
+    .content {
+      color: $charcoal-text;
+      font-size: 18px;
+      margin-top: 2em;
+      @media #{$max-width-sm} {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  #team {
+    background-color: $team-bg;
+    box-shadow: 1px 1px 5px $charcoal-text;
+    margin-bottom: 5px;
+    .container {
+      padding-top: 5em;
+      .row:first-child {
+        margin-bottom: 7em;
+      }
+      .row:last-child {
+        margin-bottom: 5em;
+      }
+    }
+    .member {
+        @media #{$min-width-md} {
+          + .row-2 {
+            margin-top: 5em !important;
+            margin-bottom: 3em !important;
+          }
+        }
+        @media #{$max-width-sm} {
+          margin-bottom: 3em;
+          + .row-3 {
+            margin-bottom: 3em !important;
+          }
+        }
+      .image-responsive {
+        padding-bottom: 1.5em;
+        display: block;
+        margin: auto;
+        @media #{$min-width-md} {
+          &:hover {
+            + .name {
+              display: none;
+            }
+            ~ .tag-line {
+              display: block;
+            }
+          }
+        }
+        //Can't use focus on desktop
+        @media #{$max-width-sm} {
+          &:focus {
+            + .name {
+              display: none;
+            }
+            ~ .tag-line {
+              display: block;
+            }
+          }
+        }
+        + .name {
+          display: block;
+        }
+        ~ .tag-line {
+          display: None;
+        }
+      }
+
+      .content {
+        color: $charcoal-text;
+        font-size: 20px;
+        margin-top: 2px;
+        height: 56px !important;
+
+        @media #{$max-width-sm} {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  #footer {
+    background-color: $lorem-section-bg;
+    padding-top: 6em;
+    padding-bottom: 8em;
+    .headline-1 {
+      font-size: 36px;
+      color: $starting-point-green;
+      font-weight: 100;
+    }
+    .headline-2 {
+      font-size: 36px;
+      color: white;
+      font-weight: 100;
+    }
+    .content {
+      @media #{$max-width-sm} {
+        font-size: 1.5em !important;
+        margin-top: 3em;
+      }
+      color: white;
+      font-size: 18px;
+      margin-top: 3em;
+    }
+    .alt-content {
+      color: $starting-point-green;
+    }
+  }
+}
+// End #main section
+
+
+#footer-menu {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  a {
+    text-decoration: none;
+    color: $charcoal-link;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #footer-navigation li {
+    border-left: 1px solid black !important;
+    &:first-child {
+      border: 0 !important;
+    }
+    @media #{$max-width-tiny} {
+      display: block !important;
+    }
+    @media #{$max-width-sm} {
+      font-size: 1.5em;
+      border: 0 !important;
+      &#contact-us {
+        border: 0 !important;
+      }
+    }
+  }
+
+  #footer-navigation {
+    margin: 0;
+    padding: 0;
+    #contact-us a {
+      color: $starting-point-light-green;
+    }
+  }
+
+  #twitter {
+    @media #{$max-width-sm} {
+      height: 3em;
+    }
+  }
+}
+// End #footer-menu section

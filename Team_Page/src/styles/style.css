@@ -1,0 +1,193 @@
+body {
+  background-color: #F1F1F1;
+  font-family: Arial, Helvetica, sans-serif; }
+  body :focus {
+    outline: 0; }
+
+#menu {
+  background-color: white;
+  border-bottom: 1px solid #DBDBDB;
+  height: 89px; }
+  #menu #starting-point-logo {
+    margin-top: 1.15em;
+    max-height: 3.72em;
+    max-width: 255px;
+    float: left; }
+    @media screen and (max-width: 768px) {
+      #menu #starting-point-logo {
+        height: 2.5em; } }
+  #menu #nav-buttons-lower {
+    text-align: center;
+    margin-top: .25em;
+    font-size: 1.25em; }
+    #menu #nav-buttons-lower li.center-item {
+      padding-left: 25px;
+      padding-right: 25px; }
+    #menu #nav-buttons-lower li a {
+      text-decoration: none;
+      color: #4A4A4A;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif; }
+      #menu #nav-buttons-lower li a:hover {
+        color: #649D3E; }
+  #menu #nav-buttons-upper {
+    font-size: 17px;
+    margin-top: 1.75em !important;
+    font-family: sans-serif; }
+    #menu #nav-buttons-upper li.center-item {
+      padding-left: 25px;
+      padding-right: 25px; }
+    #menu #nav-buttons-upper li a {
+      text-decoration: none;
+      color: #4A4A4A;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif; }
+      #menu #nav-buttons-upper li a:hover {
+        color: #649D3E; }
+  #menu #user-actions #login-link {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 1.25em;
+    color: #70AE47;
+    font-size: 20px;
+    text-decoration: none; }
+    @media screen and (max-width: 768px) {
+      #menu #user-actions #login-link {
+        font-size: 16px; } }
+    #menu #user-actions #login-link:hover {
+      color: #649D3E; }
+  #menu #user-actions #sign-up-btn {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 2px 15px;
+    margin-top: 1em;
+    background-color: #70AE47;
+    border-color: #649D3E;
+    color: white;
+    font-size: 20px; }
+    @media screen and (max-width: 768px) {
+      #menu #user-actions #sign-up-btn {
+        font-size: 16px; } }
+    #menu #user-actions #sign-up-btn:hover {
+      background-color: #649D3E; }
+
+#main {
+  margin-top: calc(5% + 10px); }
+  #main #meet-the-team {
+    margin-bottom: 5em; }
+    #main #meet-the-team .headline {
+      font-size: 36px;
+      color: #649D3E;
+      font-weight: 100; }
+    #main #meet-the-team .content {
+      color: #6A6A6A;
+      font-size: 18px;
+      margin-top: 2em; }
+      @media screen and (max-width: 991px) {
+        #main #meet-the-team .content {
+          font-size: 1.5em; } }
+  #main #team {
+    background-color: #E7EBE5;
+    box-shadow: 1px 1px 5px #6A6A6A;
+    margin-bottom: 5px; }
+    #main #team .container {
+      padding-top: 5em; }
+      #main #team .container .row:first-child {
+        margin-bottom: 7em; }
+      #main #team .container .row:last-child {
+        margin-bottom: 5em; }
+    @media (min-width: 992px) {
+      #main #team .member + .row-2 {
+        margin-top: 5em !important;
+        margin-bottom: 3em !important; } }
+    @media screen and (max-width: 991px) {
+      #main #team .member {
+        margin-bottom: 3em; }
+        #main #team .member + .row-3 {
+          margin-bottom: 3em !important; } }
+    #main #team .member .image-responsive {
+      padding-bottom: 1.5em;
+      display: block;
+      margin: auto; }
+      @media (min-width: 992px) {
+        #main #team .member .image-responsive:hover + .name {
+          display: none; }
+        #main #team .member .image-responsive:hover ~ .tag-line {
+          display: block; } }
+      @media screen and (max-width: 991px) {
+        #main #team .member .image-responsive:focus + .name {
+          display: none; }
+        #main #team .member .image-responsive:focus ~ .tag-line {
+          display: block; } }
+      #main #team .member .image-responsive + .name {
+        display: block; }
+      #main #team .member .image-responsive ~ .tag-line {
+        display: None; }
+    #main #team .member .content {
+      color: #6A6A6A;
+      font-size: 20px;
+      margin-top: 2px;
+      height: 56px !important; }
+      @media screen and (max-width: 991px) {
+        #main #team .member .content {
+          font-size: 1.5em; } }
+  #main #footer {
+    background-color: #24224F;
+    padding-top: 6em;
+    padding-bottom: 8em; }
+    #main #footer .headline-1 {
+      font-size: 36px;
+      color: #649D3E;
+      font-weight: 100; }
+    #main #footer .headline-2 {
+      font-size: 36px;
+      color: white;
+      font-weight: 100; }
+    #main #footer .content {
+      color: white;
+      font-size: 18px;
+      margin-top: 3em; }
+      @media screen and (max-width: 991px) {
+        #main #footer .content {
+          font-size: 1.5em !important;
+          margin-top: 3em; } }
+    #main #footer .alt-content {
+      color: #649D3E; }
+
+#footer-menu {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  #footer-menu a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif; }
+  #footer-menu #footer-navigation li {
+    border-left: 1px solid black !important; }
+    #footer-menu #footer-navigation li:first-child {
+      border: 0 !important; }
+    @media screen and (max-width: 556px) {
+      #footer-menu #footer-navigation li {
+        display: block !important; } }
+    @media screen and (max-width: 991px) {
+      #footer-menu #footer-navigation li {
+        font-size: 1.5em;
+        border: 0 !important; }
+        #footer-menu #footer-navigation li#contact-us {
+          border: 0 !important; } }
+  #footer-menu #footer-navigation {
+    margin: 0;
+    padding: 0; }
+    #footer-menu #footer-navigation #contact-us a {
+      color: #70AE47; }
+  @media screen and (max-width: 991px) {
+    #footer-menu #twitter {
+      height: 3em; } }
+
+/*# sourceMappingURL=style.css.map */
