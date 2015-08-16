@@ -26,10 +26,9 @@ body {
 }
 // End Body section
 
-#menu {
+header {
   background-color: white;
   border-bottom: 1px solid $menu-border;
-  height: 89px;
 
   .container {
     @media #{$max-width-tiny} {
@@ -43,7 +42,6 @@ body {
     }
     @media #{$max-width-tiny} {
       padding: 0;
-      width: 50%;
     }
     margin-top: 1.15em;
     max-height: 3.72em;
@@ -54,7 +52,10 @@ body {
   #nav-buttons-lower {
     @media #{$max-width-tiny} {
       font-size: 1.2em;
+      padding: 8px 0;
     }
+    border-top: 1px solid #ccc;
+    margin-bottom: 0;
     text-align: center;
     margin-top: .25em;
     font-size: 1.25em;

@@ -1,16 +1,17 @@
 # UQ Take-Home Exercise
----
+
 This project is a sample of my work, illustrating my knowledge of Front-End best practices.  
 ####I was tasked with recreating the look and feel of a given design.
-#####Optional tasks included making it Responsive and adding a small animation to the team member avatars.
+#####Optional tasks included making it responsive and adding a small animation to the team member avatars.
 
 ## Dev Environment Installation Instructions
 
 
-1. Clone the repository
-1. `cd /team_page`
-1. `npm install` - Installs bower and gulp (and gulp's dependencies)
-1. `bower install` - Installs Bootstrap and jQuery 
+1. `git clone https://github.com/8bitg/uq-sample-project.git` - Clone the repository
+1. `cd uq-sample-project`
+1. `cd team_page`
+1. `npm install` - Uses NPM to install bower and gulp (and gulp's dependencies)
+1. `bower install` - Uses Bower to install Bootstrap and jQuery 
 1. `node server.js` - Starts a local node server that allows you to test the page on your mobile device.
   * **Browser** - Navigate to `localhost:3000/src/team-page.html`
   * **Mobile Device** - Navigate to `<your-ip>:3000/src/team-page.html` 
