@@ -2,3 +2,5 @@
 
 Team_Page/bower_components
 Team_Page/node_modules
+*.zip
+Team_Page/dist
