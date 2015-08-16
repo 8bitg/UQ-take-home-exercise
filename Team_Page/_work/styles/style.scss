@@ -8,6 +8,13 @@ $team-bg: #E7EBE5;
 $lorem-section-bg: #24224F;
 $standard-fonts: Arial, Helvetica, sans-serif;
 
+$max-width-sm: "screen and (max-width: 991px)";
+$max-width-xs: "screen and (max-width: 768px)";
+$max-width-tiny: "screen and (max-width: 556px)";
+$max-width-md: "screen and (max-width: 1199px)";
+
+$min-width-md: "(min-width: 992px)";
+
 body {
   background-color: $meet-team-bg;
   font-family: $standard-fonts;
@@ -16,8 +23,8 @@ body {
   :focus {
     outline: 0;
   }
-
 }
+// End Body section
 
 #menu {
   background-color: white;
@@ -25,17 +32,40 @@ body {
   height: 89px;
 
   #starting-point-logo {
+    @media #{$max-width-xs} {
+      height: 2.5em;
+    }
     margin-top: 1.15em;
-    height: 3.72em;
-    min-height: 3.72em;
+    max-height: 3.72em;
+    max-width: 255px;
     float: left;
   }
 
-  ul {
+  #nav-buttons-lower {
+    text-align: center;
+    margin-top: .25em;
+    font-size: 1.25em;
+    li {
+      &.center-item {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: $charcoal-link;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover {
+          color: $starting-point-green;
+        }
+      }
+    }
+  }
+
+  #nav-buttons-upper {
     font-size: 17px;
     margin-top: 1.75em !important;
     font-family: sans-serif;
-    margin-left: 5em;
     li {
       &.center-item {
         padding-left: 25px;
@@ -54,7 +84,16 @@ body {
   }
 
   #user-actions {
-    a {
+    #login-link {
+      @media #{$max-width-xs} {
+        font-size: 16px;
+      }
+      width: 50%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
       margin-top: 1.25em;
       color: $starting-point-light-green;
       font-size: 20px;
@@ -63,20 +102,27 @@ body {
         color: $starting-point-green;
       }
     }
-    button {
+    #sign-up-btn {
+      @media #{$max-width-xs} {
+        font-size: 16px;
+      }
+      width: 50%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding: 2px 15px;
       margin-top: 1em;
       background-color: $starting-point-light-green;
       border-color: $starting-point-green;
       color: white;
       font-size: 20px;
-      padding-top: 2px;
-      padding-bottom: 2px;
       &:hover {
         background-color: $starting-point-green;
       }
     }
   }
 }
+// End #menu section
 
 #main {
   margin-top: calc(5% + 10px);
@@ -92,6 +138,9 @@ body {
       color: $charcoal-text;
       font-size: 18px;
       margin-top: 2em;
+      @media #{$max-width-sm} {
+        font-size: 1.5em;
+      }
     }
   }
 
@@ -109,13 +158,13 @@ body {
       }
     }
     .member {
-        @media (min-width: 992px) {
+        @media #{$min-width-md} {
           + .row-2 {
             margin-top: 5em !important;
             margin-bottom: 3em !important;
           }
         }
-        @media screen and (max-width: 991px) {
+        @media #{$max-width-sm} {
           margin-bottom: 3em;
           + .row-3 {
             margin-bottom: 3em !important;
@@ -125,12 +174,25 @@ body {
         padding-bottom: 1.5em;
         display: block;
         margin: auto;
-        &:hover {
-          + .name {
-            display: none;
+        @media #{$min-width-md} {
+          &:hover {
+            + .name {
+              display: none;
+            }
+            ~ .tag-line {
+              display: block;
+            }
           }
-          ~ .tag-line {
-            display: block;
+        }
+        //Can't use focus on desktop
+        @media #{$max-width-sm} {
+          &:focus {
+            + .name {
+              display: none;
+            }
+            ~ .tag-line {
+              display: block;
+            }
           }
         }
         + .name {
@@ -146,6 +208,10 @@ body {
         font-size: 20px;
         margin-top: 2px;
         height: 56px !important;
+
+        @media #{$max-width-sm} {
+          font-size: 1.5em;
+        }
       }
     }
   }
@@ -165,6 +231,10 @@ body {
       font-weight: 100;
     }
     .content {
+      @media #{$max-width-sm} {
+        font-size: 1.5em !important;
+        margin-top: 3em;
+      }
       color: white;
       font-size: 18px;
       margin-top: 3em;
@@ -174,6 +244,8 @@ body {
     }
   }
 }
+// End #main section
+
 
 #footer-menu {
   padding-top: 2em;
@@ -190,16 +262,15 @@ body {
     &:first-child {
       border: 0 !important;
     }
-    @media screen and (max-width: 556px) {
+    @media #{$max-width-tiny} {
       display: block !important;
     }
-    @media screen and (max-width: 991px) {
+    @media #{$max-width-sm} {
+      font-size: 1.5em;
+      border: 0 !important;
       &#contact-us {
         border: 0 !important;
       }
-    }
-    @media screen and (max-width: 991px) {
-      border: 0 !important;
     }
   }
 
@@ -212,8 +283,9 @@ body {
   }
 
   #twitter {
-    @media screen and (max-width: 768px) {
-      height: 30px;
+    @media #{$max-width-sm} {
+      height: 3em;
     }
   }
 }
+// End #footer-menu section

@@ -17,18 +17,27 @@
 <body>
     <nav id="menu" class="navbar">
         <div class="container">
-            <img class="col-xs-3" id="starting-point-logo" src="../assets/logo.png" alt="Starting Point Logo" role="presentation" tabindex="0"/>
-            <div class="col-xs-5 headline-top">
-                <ul class="pull-right list-inline headline-top">
+            <img class="col-sm-5 col-md-4 col-lg-3" id="starting-point-logo" src="../assets/logo.png" alt="Starting Point Logo" role="presentation" tabindex="0"/>
+            <div class="hidden-xs hidden-sm col-md-5 col-lg-5" id="nav-buttons-upper" >
+                <ul class="pull-right list-inline">
                     <li><a href="#">OUR STORY</a></li>
                     <li class="center-item"><a href="#">BLOG</a></li>
                     <li><a href="#">PRICING</a></li>
                 </ul>
             </div>
-            <div id="user-actions" class="headline-top col-xs-4">
-                <a href="#" class="text-center col-xs-6">Login</a>
-                <button class="btn btn-sm col-xs-6">SIGNUP</button>
+            <div class="col-xs-6 col-sm-5 col-md-3 col-lg-4 pull-right" id="user-actions">
+                <a id="login-link" href="#" class="text-center">Login</a>
+                <button id="sign-up-btn" class="btn btn-sm">SIGNUP</button>
             </div>
+        </div>
+        <!-- Decided to keep the nav links visible, even on smaller screens. -->
+        <!-- Wanted to avoid using the Hamburger menu, only because it is over-used and I wanted to see how a second row of links would play out.-->
+        <div class="hidden-md hidden-lg col-xs-12" id="nav-buttons-lower">
+            <ul class="list-inline">
+                <li><a href="#">OUR STORY</a></li>
+                <li class="center-item"><a href="#">BLOG</a></li>
+                <li><a href="#">PRICING</a></li>
+            </ul>
         </div>
     </nav>
     <div id="main">
@@ -43,45 +52,45 @@
 
                 <!-- Member: Scott Rakestraw - Has Aria Label -->
                 <div tabindex="0" class="member col-md-4 col-sm-6 col-xs-12">
-                    <img class="image-responsive" src="../assets/animal_1.png" alt="An image of a sheep"/>
+                    <img class="image-responsive" src="../assets/animal_1.png" alt="An image of a sheep" tabindex="0"/>
 
                     <span aria-label="Scott Rakestraw - Don't be sheepish, check us out!" class="name content">Scott Rakestraw</span>
                     <span class="tag-line content">"Don't be sheepish, check us out!"</span>
                 </div>
                 <!-- Member: Keith Pepling - Has Aria Label -->
                 <div tabindex="0" class="member col-md-4 col-sm-6 col-xs-12">
-                    <img class="image-responsive" src="../assets/animal_5.png" alt="An image of a cow"/>
+                    <img class="image-responsive" src="../assets/animal_5.png" alt="An image of a cow" tabindex="0"/>
 
                     <span aria-label="Keith Pepling - You'll be over the MOOn!" class="name content">Keith Pepling</span>
                     <span class="tag-line content">"You'll be over the MOOn!"</span>
                 </div>
                 <!-- Member: Orion Free - Has Aria Label -->
                 <div tabindex="0" class="member col-md-4 col-sm-6 col-xs-12">
-                    <img class="image-responsive" src="../assets/animal_8.png" alt="An image of a buck"/>
+                    <img class="image-responsive" src="../assets/animal_8.png" alt="An image of a buck" tabindex="0"/>
 
                     <span aria-label="Orion Free - Just a few Bucks a month" class="name content">Orion Free</span>
                     <span class="tag-line content">"Just a few Bucks a month"</span>
                 </div>
                 <!-- Member: Kekeli Houngbeke - Has Aria Label -->
                 <div tabindex="0" class="member row-2 col-md-4 col-sm-6 col-xs-12">
-                    <img class="image-responsive" src="../assets/animal_3.png" alt="An image of a fox"/>
+                    <img class="image-responsive" src="../assets/animal_3.png" alt="An image of a fox" tabindex="0"/>
 
                     <span aria-label="Kekeli Houngbeke - I can't wait to get my paws on it!" class="name content">Kekeli Houngbeke</span>
                     <span class="tag-line content">"I can't wait to get my paws on it!"</span>
                 </div>
                 <!-- Member: Kathryn Pearlman - Has Aria Label -->
                 <div tabindex="0" class="member row-2 col-md-4 col-sm-6 col-xs-12">
-                    <img class="image-responsive" src="../assets/animal_2.png" alt="An image of a giraffe"/>
+                    <img class="image-responsive" src="../assets/animal_2.png" alt="An image of a giraffe" tabindex="0"/>
 
                     <span aria-label="Kathryn Pearlman - We'll stick our necks out for you" class="name content">Kathryn Pearlman</span>
                     <span class="tag-line content">"We'll stick our necks out for you"</span>
                 </div>
                 <!-- Member: Greg Harrison - Has Aria Label -->
                 <div tabindex="0" class="member row-2 row-3 col-md-4 col-sm-6 col-xs-12">
-                    <img class="image-responsive" src="../assets/animal_me.png" alt="An image of a penguin"/>
+                    <img class="image-responsive" src="../assets/animal_me.png" alt="An image of a penguin" tabindex="0"/>
 
-                    <span aria-label="Greg Harrison - Brr! It's so cool!" class="name content">Greg Harrison</span>
-                    <span class="tag-line content">"Brr! It's so cool!"</span>
+                    <span aria-label="Greg Harrison - It's the coolest! Brr!" class="name content">Greg Harrison</span>
+                    <span class="tag-line content">"It's the coolest! Brr!"</span>
                 </div>
             </div>
         </section>

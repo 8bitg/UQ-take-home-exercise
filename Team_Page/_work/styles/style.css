@@ -10,40 +10,71 @@ body {
   height: 89px; }
   #menu #starting-point-logo {
     margin-top: 1.15em;
-    height: 3.72em;
-    min-height: 3.72em;
+    max-height: 3.72em;
+    max-width: 255px;
     float: left; }
-  #menu ul {
-    font-size: 17px;
-    margin-top: 1.75em !important;
-    font-family: sans-serif;
-    margin-left: 5em; }
-    #menu ul li.center-item {
+    @media screen and (max-width: 768px) {
+      #menu #starting-point-logo {
+        height: 2.5em; } }
+  #menu #nav-buttons-lower {
+    text-align: center;
+    margin-top: .25em;
+    font-size: 1.25em; }
+    #menu #nav-buttons-lower li.center-item {
       padding-left: 25px;
       padding-right: 25px; }
-    #menu ul li a {
+    #menu #nav-buttons-lower li a {
       text-decoration: none;
       color: #4A4A4A;
       font-weight: 500;
       font-family: Arial, Helvetica, sans-serif; }
-      #menu ul li a:hover {
+      #menu #nav-buttons-lower li a:hover {
         color: #649D3E; }
-  #menu #user-actions a {
+  #menu #nav-buttons-upper {
+    font-size: 17px;
+    margin-top: 1.75em !important;
+    font-family: sans-serif; }
+    #menu #nav-buttons-upper li.center-item {
+      padding-left: 25px;
+      padding-right: 25px; }
+    #menu #nav-buttons-upper li a {
+      text-decoration: none;
+      color: #4A4A4A;
+      font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif; }
+      #menu #nav-buttons-upper li a:hover {
+        color: #649D3E; }
+  #menu #user-actions #login-link {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-top: 1.25em;
     color: #70AE47;
     font-size: 20px;
     text-decoration: none; }
-    #menu #user-actions a:hover {
+    @media screen and (max-width: 768px) {
+      #menu #user-actions #login-link {
+        font-size: 16px; } }
+    #menu #user-actions #login-link:hover {
       color: #649D3E; }
-  #menu #user-actions button {
+  #menu #user-actions #sign-up-btn {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding: 2px 15px;
     margin-top: 1em;
     background-color: #70AE47;
     border-color: #649D3E;
     color: white;
-    font-size: 20px;
-    padding-top: 2px;
-    padding-bottom: 2px; }
-    #menu #user-actions button:hover {
+    font-size: 20px; }
+    @media screen and (max-width: 768px) {
+      #menu #user-actions #sign-up-btn {
+        font-size: 16px; } }
+    #menu #user-actions #sign-up-btn:hover {
       background-color: #649D3E; }
 
 #main {
@@ -58,6 +89,9 @@ body {
       color: #6A6A6A;
       font-size: 18px;
       margin-top: 2em; }
+      @media screen and (max-width: 991px) {
+        #main #meet-the-team .content {
+          font-size: 1.5em; } }
   #main #team {
     background-color: #E7EBE5;
     box-shadow: 1px 1px 5px #6A6A6A;
@@ -81,10 +115,16 @@ body {
       padding-bottom: 1.5em;
       display: block;
       margin: auto; }
-      #main #team .member .image-responsive:hover + .name {
-        display: none; }
-      #main #team .member .image-responsive:hover ~ .tag-line {
-        display: block; }
+      @media (min-width: 992px) {
+        #main #team .member .image-responsive:hover + .name {
+          display: none; }
+        #main #team .member .image-responsive:hover ~ .tag-line {
+          display: block; } }
+      @media screen and (max-width: 991px) {
+        #main #team .member .image-responsive:focus + .name {
+          display: none; }
+        #main #team .member .image-responsive:focus ~ .tag-line {
+          display: block; } }
       #main #team .member .image-responsive + .name {
         display: block; }
       #main #team .member .image-responsive ~ .tag-line {
@@ -94,6 +134,9 @@ body {
       font-size: 20px;
       margin-top: 2px;
       height: 56px !important; }
+      @media screen and (max-width: 991px) {
+        #main #team .member .content {
+          font-size: 1.5em; } }
   #main #footer {
     background-color: #24224F;
     padding-top: 6em;
@@ -110,6 +153,10 @@ body {
       color: white;
       font-size: 18px;
       margin-top: 3em; }
+      @media screen and (max-width: 991px) {
+        #main #footer .content {
+          font-size: 1.5em !important;
+          margin-top: 3em; } }
     #main #footer .alt-content {
       color: #649D3E; }
 
@@ -129,18 +176,18 @@ body {
       #footer-menu #footer-navigation li {
         display: block !important; } }
     @media screen and (max-width: 991px) {
-      #footer-menu #footer-navigation li#contact-us {
-        border: 0 !important; } }
-    @media screen and (max-width: 991px) {
       #footer-menu #footer-navigation li {
-        border: 0 !important; } }
+        font-size: 1.5em;
+        border: 0 !important; }
+        #footer-menu #footer-navigation li#contact-us {
+          border: 0 !important; } }
   #footer-menu #footer-navigation {
     margin: 0;
     padding: 0; }
     #footer-menu #footer-navigation #contact-us a {
       color: #70AE47; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     #footer-menu #twitter {
-      height: 30px; } }
+      height: 3em; } }
 
 /*# sourceMappingURL=style.css.map */
