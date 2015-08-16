@@ -138,5 +138,8 @@ body {
     padding: 0; }
     #footer-menu #footer-navigation #contact-us a {
       color: #70AE47; }
+  @media screen and (max-width: 768px) {
+    #footer-menu #twitter {
+      height: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
